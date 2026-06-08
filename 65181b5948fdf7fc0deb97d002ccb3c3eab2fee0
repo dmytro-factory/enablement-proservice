@@ -1,0 +1,21 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.2",
+  "base_commit_sha": "65181b5948fdf7fc0deb97d002ccb3c3eab2fee0",
+  "prompts": {
+    "9ff5de9d8540426a": {
+      "agent_id": {
+        "tool": "droid",
+        "id": "713c1c33-8ec4-4ed9-87cf-d3125df99e11",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "DY",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 2,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    }
+  }
+}
