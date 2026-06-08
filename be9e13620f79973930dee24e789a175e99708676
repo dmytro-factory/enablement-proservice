@@ -1,0 +1,23 @@
+deck.html
+  9ff5de9d8540426a 1216-1217
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.2",
+  "base_commit_sha": "be9e13620f79973930dee24e789a175e99708676",
+  "prompts": {
+    "9ff5de9d8540426a": {
+      "agent_id": {
+        "tool": "droid",
+        "id": "713c1c33-8ec4-4ed9-87cf-d3125df99e11",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "DY",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 1,
+      "accepted_lines": 2,
+      "overriden_lines": 0
+    }
+  }
+}
