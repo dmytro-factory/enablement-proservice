@@ -959,7 +959,93 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 03 SURFACES + AUTOMATION -->
+    <!-- 03 OBSERVABILITY & CONTROLS -->
+    <section class="slide std">
+      <header class="chrome">
+        <div class="left">
+          <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
+          <span>Observability &amp; Controls</span>
+        </div>
+        <div class="right num">03 / 18</div>
+      </header>
+
+      <div class="content-wide">
+        <div class="kicker">Commands, settings, and workflows</div>
+        <h2 class="h2" style="max-width: 1200px;">Quick access. <em class="fg-orange" style="font-style:normal;">Pre-built automation.</em></h2>
+
+        <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 12px;">
+          <div style="display:flex; flex-direction:column; gap: 16px;">
+            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Session Commands</div>
+              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
+                <div><a href="https://docs.factory.ai/cli/commands/sessions" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/sessions</a> — View all sessions</div>
+                <div><a href="https://docs.factory.ai/cli/commands/fork" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/fork</a> — Branch from current</div>
+                <div><a href="https://docs.factory.ai/cli/commands/review-history" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/review-history</a> — See what changed</div>
+              </div>
+            </div>
+
+            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Context &amp; Settings</div>
+              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
+                <div><a href="https://docs.factory.ai/cli/commands/context" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/context</a> — Manage session context</div>
+                <div><a href="https://docs.factory.ai/cli/commands/clear" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/clear</a> — Reset conversation</div>
+                <div><a href="https://docs.factory.ai/cli/commands/cost" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/cost</a> — Credit usage &amp; pricing</div>
+              </div>
+            </div>
+
+            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Auth &amp; Org</div>
+              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
+                <div><a href="https://docs.factory.ai/cli/commands/login" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/login</a> — Authenticate</div>
+                <div><a href="https://docs.factory.ai/cli/configuration/defaults" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/defaults</a> — Org-level config</div>
+                <div><a href="https://docs.factory.ai/cli/configuration/models" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/models</a> — Available models &amp; routing</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-direction:column; gap: 16px;">
+            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Install Git Hooks</div>
+              <div style="padding: 12px 16px; background: var(--black); border: 1px solid var(--border); border-radius: var(--r-small); font-family: var(--font-mono); font-size: 12px; color: var(--gray); line-height: 1.6; margin-bottom: 8px;">
+                <div style="color: var(--white);">$ git ai --install</div>
+                <div style="color: var(--white); margin-top: 6px;">$ git ci --install</div>
+                <div style="color: var(--white); margin-top: 6px;">$ qa --install</div>
+              </div>
+              <div class="body" style="font-size: 12px; color: var(--gray);"><a href="https://docs.factory.ai/cli/git-hooks/overview" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">Git hooks docs →</a></div>
+            </div>
+
+            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Pre-built Workflows</div>
+              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
+                <div><span style="color: var(--orange);">/missions</span> <span style="color: var(--gray);">security_scan</span></div>
+                <div><span style="color: var(--orange);">/missions</span> <span style="color: var(--gray);">agent_readiness</span></div>
+                <div><span style="color: var(--orange);">/missions</span> <span style="color: var(--gray);">review</span></div>
+              </div>
+              <div class="body" style="font-size: 12px; color: var(--gray); margin-top: 8px;"><a href="https://docs.factory.ai/cli/features/missions" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">Missions docs →</a> <a href="https://docs.factory.ai/cli/commands/readiness-report" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">readiness-report →</a></div>
+            </div>
+
+            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 12px;">Observability</div>
+              <ul class="bullets" style="font-size: 14px;">
+                <li>Session history and replay</li>
+                <li>Credit usage tracking</li>
+                <li>Custom instructions</li>
+                <li>Org audit logs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="foot">
+        <div>Observability // personal &amp; org</div>
+        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">03</span></div>
+      </footer>
+    </section>
+
+
+    <!-- 04 SURFACES + AUTOMATION -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1040,7 +1126,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-        <!-- 04 CUSTOMIZATION HIERARCHY -->
+        <!-- 05 CUSTOMIZATION HIERARCHY -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1127,7 +1213,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 05 SKILLS & CUSTOM DROIDS -->
+    <!-- 06 SKILLS & CUSTOM DROIDS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1189,7 +1275,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 06 HOOKS -->
+    <!-- 07 HOOKS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1268,7 +1354,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 07 PLUGINS -->
+    <!-- 08 PLUGINS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1331,7 +1417,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 08 ENTERPRISE CONTROLS -->
+    <!-- 09 ENTERPRISE CONTROLS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1380,7 +1466,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 09 MODES -->
+    <!-- 10 MODES -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1442,7 +1528,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 10 MISSIONS ARCHITECTURE -->
+    <!-- 11 MISSIONS ARCHITECTURE -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1493,7 +1579,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 11 TRY MISSIONS -->
+    <!-- 12 TRY MISSIONS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1526,7 +1612,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 12 AGENT READINESS -->
+    <!-- 13 AGENT READINESS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1610,7 +1696,7 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 13 INTEGRATIONS -->
+    <!-- 14 INTEGRATIONS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
@@ -1655,48 +1741,6 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 14 OBSERVABILITY & CONTROLS -->
-    <section class="slide std">
-      <header class="chrome">
-        <div class="left">
-          <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
-          <span>Observability &amp; Controls</span>
-        </div>
-        <div class="right num">14 / 18</div>
-      </header>
-
-      <div class="content-wide">
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start;">
-          <div style="display:flex; flex-direction:column; gap: 28px;">
-            <div class="kicker">Personal</div>
-            <h2 class="h2" style="font-size: 56px; line-height: 1.05;">Your session, your context.</h2>
-            <ul class="bullets">
-              <li>Session history and replay</li>
-              <li>Credit usage and cost tracking</li>
-              <li>Custom instructions and preferences</li>
-              <li>Skill and droid discovery</li>
-            </ul>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap: 28px;">
-            <div class="kicker">Organization</div>
-            <h2 class="h2" style="font-size: 56px; line-height: 1.05;">Fleet-level visibility.</h2>
-            <ul class="bullets">
-              <li>Usage analytics and adoption trends</li>
-              <li>Policy enforcement and red lines</li>
-              <li>Shared skills and constitution</li>
-              <li>Audit logs and compliance reporting</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <footer class="foot">
-        <div>Observability // personal &amp; org</div>
-        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">14</span></div>
-      </footer>
-    </section>
 
 
 
