@@ -877,78 +877,26 @@ img, svg { max-width: 100%; max-height: 100%; }
         <div class="right num">02 / 18</div>
       </header>
 
-      <div style="display:flex; flex-direction:column; gap: 28px;">
-        <div class="kicker">What we will cover</div>
-        <h2 class="h2" style="max-width: 1200px;">A walk through the harness &mdash; <em class="fg-orange" style="font-style:normal;">from configuration to control.</em></h2>
-
-        <div class="agenda-grid">
-          <div class="agenda-item">
-            <span class="agenda-num">01</span>
-            <div class="agenda-text">Customization Hierarchy<small>AGENTS.md discovery, skills, droids, hooks</small></div>
+      <div style="display:flex; flex-direction:column; justify-content:center; flex:1; gap: 0;">
+        <div class="kicker" style="margin-bottom: 32px;">What we will cover</div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 0 80px; font-family: var(--font-sans);">
+          <div style="display:flex; flex-direction:column;">
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">03</span><span style="font-size:18px; color:var(--white);">Surfaces &amp; Automation</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">04</span><span style="font-size:18px; color:var(--white);">Slash Commands</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">05</span><span style="font-size:18px; color:var(--white);">Customization Hierarchy</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">06</span><span style="font-size:18px; color:var(--white);">Skills &amp; Custom Droids</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">07</span><span style="font-size:18px; color:var(--white);">Hooks</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">08</span><span style="font-size:18px; color:var(--white);">Plugins &amp; Distribution</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">09</span><span style="font-size:18px; color:var(--white);">Enterprise Controls</span></div>
           </div>
-          <div class="agenda-item">
-            <span class="agenda-num">02</span>
-            <div class="agenda-text">Skills &amp; Custom Droids<small>Front matter, model selection, delegation</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">03</span>
-            <div class="agenda-text">Hooks<small>Pre-tool, post-tool, session-end, enforcement</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">04</span>
-            <div class="agenda-text">Enterprise Controls<small>Model access, command policy, Droid Shield</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">05</span>
-            <div class="agenda-text">Plugins &amp; Distribution<small>Package skills, droids, MCPs. Self-discovery and org defaults</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">06</span>
-            <div class="agenda-text">Modes<small>Normal, spec, and mission mode</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">06</span>
-            <div class="agenda-text">Missions Architecture<small>Orchestrator, workers, validators</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">07</span>
-            <div class="agenda-text">Try Missions<small>/missions command and getting started</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">08</span>
-            <div class="agenda-text">Surfaces &amp; Automation<small>Desktop, TUI, CLI, SDK, CI/CD, Slack</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">09</span>
-            <div class="agenda-text">Agent Readiness<small>Eight pillars, concrete signals, /readiness-report</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">09</span>
-            <div class="agenda-text">Integrations<small>Git, Linear, MCPs, and third-party wiring</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">10</span>
-            <div class="agenda-text">Observability &amp; Controls<small>Personal and org-level visibility</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">11</span>
-            <div class="agenda-text">Headless Droids &amp; CI/CD<small>Automation, scheduling, pipelines</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">12</span>
-            <div class="agenda-text">SDLC Mapping<small>Where Factory fits in your workflow</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">13</span>
-            <div class="agenda-text">Pilot<small>Pre-flight checklist and 14-day validation plan</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">14</span>
-            <div class="agenda-text">Help &amp; Issues<small>Finding answers and reporting problems</small></div>
-          </div>
-          <div class="agenda-item">
-            <span class="agenda-num">15</span>
-            <div class="agenda-text">AOB<small>Any other business</small></div>
+          <div style="display:flex; flex-direction:column;">
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">10</span><span style="font-size:18px; color:var(--white);">Modes</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">11</span><span style="font-size:18px; color:var(--white);">Missions Architecture</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">12</span><span style="font-size:18px; color:var(--white);">Try Missions</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">13</span><span style="font-size:18px; color:var(--white);">Agent Readiness</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">14</span><span style="font-size:18px; color:var(--white);">Help &amp; Support</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">15</span><span style="font-size:18px; color:var(--white);">Pilot &amp; Validation</span></div>
+            <div style="display:flex; align-items:baseline; gap:18px; padding: 13px 0; border-bottom: 1px solid var(--border);"><span style="font-family:var(--font-mono); font-size:12px; color:var(--orange); min-width:22px;">16</span><span style="font-size:18px; color:var(--white);">AOB</span></div>
           </div>
         </div>
       </div>
