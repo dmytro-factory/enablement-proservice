@@ -874,7 +874,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           </span>
           <span>Agenda</span>
         </div>
-        <div class="right num">02 / 18</div>
+        <div class="right num">02 / 19</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 28px;">
@@ -900,7 +900,11 @@ img, svg { max-width: 100%; max-height: 100%; }
           </div>
           <div class="agenda-item">
             <span class="agenda-num">05</span>
-            <div class="agenda-text">Modes<small>Spec mode and mission mode</small></div>
+            <div class="agenda-text">Plugins &amp; Distribution<small>Package skills, droids, MCPs. Self-discovery and org defaults</small></div>
+          </div>
+          <div class="agenda-item">
+            <span class="agenda-num">06</span>
+            <div class="agenda-text">Modes<small>Normal, spec, and mission mode</small></div>
           </div>
           <div class="agenda-item">
             <span class="agenda-num">06</span>
@@ -962,7 +966,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Customization Hierarchy</span>
         </div>
-        <div class="right num">03 / 18</div>
+        <div class="right num">03 / 19</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 28px;">
@@ -1049,7 +1053,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Skills &amp; Custom Droids</span>
         </div>
-        <div class="right num">04 / 18</div>
+        <div class="right num">04 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1111,7 +1115,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Hooks</span>
         </div>
-        <div class="right num">05 / 18</div>
+        <div class="right num">05 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1183,14 +1187,77 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 06 ENTERPRISE CONTROLS -->
+    <!-- 06 PLUGINS -->
+    <section class="slide std">
+      <header class="chrome">
+        <div class="left">
+          <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
+          <span>Plugins &amp; Distribution</span>
+        </div>
+        <div class="right num">06 / 19</div>
+      </header>
+
+      <div class="content-wide">
+        <div class="kicker">Package &middot; share &middot; distribute</div>
+        <h2 class="h2" style="max-width: 1200px;">Bundle skills, droids, and MCPs. <em class="fg-orange" style="font-style:normal;">Share across teams.</em></h2>
+
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 12px;">
+          <div class="card" style="border-color: var(--orange);">
+            <div class="label" style="color:var(--orange); margin-bottom: 12px;">Package</div>
+            <div class="h3" style="font-size: 24px;">Plugin Bundle</div>
+            <p class="body" style="margin-top: 10px; font-size: 16px;">Package skills, custom droids, MCP servers, hooks, and slash commands into a single shareable unit. Versioned, documented, and portable.</p>
+            <ul class="bullets" style="margin-top: 12px; font-size: 14px;">
+              <li>Skills + front matter</li>
+              <li>Custom droids with model config</li>
+              <li>MCP server definitions</li>
+              <li>Hooks and validation rules</li>
+            </ul>
+          </div>
+          <div class="card" style="border-color: var(--orange);">
+            <div class="label" style="color:var(--orange); margin-bottom: 12px;">Self-Discovery</div>
+            <div class="h3" style="font-size: 24px;">Repo-Level</div>
+            <p class="body" style="margin-top: 10px; font-size: 16px;">Drop a plugin into <code style="font-family:var(--font-mono); color:var(--orange);">.factory/plugins/</code> or <code style="font-family:var(--font-mono); color:var(--orange);">~/.factory/plugins/</code>. The droid discovers and loads it automatically. No central registry required.</p>
+            <ul class="bullets" style="margin-top: 12px; font-size: 14px;">
+              <li>Project-scoped plugins</li>
+              <li>User harness plugins</li>
+              <li>Auto-load on session start</li>
+              <li>No install step needed</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="label" style="margin-bottom: 12px;">Org Defaults</div>
+            <div class="h3" style="font-size: 24px;">Fleet-Wide</div>
+            <p class="body" style="margin-top: 10px; font-size: 16px;">Set org-level default plugins via hierarchical settings. Every droid in your fleet gets the same security review droid, the same linter hooks, the same MCPs.</p>
+            <ul class="bullets" style="margin-top: 12px; font-size: 14px;">
+              <li>Org > Folder > Project inheritance</li>
+              <li>Extension-only merge</li>
+              <li>Lock critical plugins at org level</li>
+              <li>Teams add their own on top</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; padding: 18px 28px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+          <div class="lead" style="font-size: 18px;">
+            <span class="fg-orange">Distribution:</span> Self-discovery for fast iteration. Org defaults for governance. Combine both: org provides the guardrails, teams provide the specialization. <a href="https://docs.factory.ai/cli/configuration/plugins" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">plugins docs &rarr;</a> <a href="https://docs.factory.ai/guides/building/building-plugins" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">building plugins &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="foot">
+        <div>Plugins // package, self-discovery, org defaults</div>
+        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">06</span></div>
+      </footer>
+    </section>
+
+    <!-- 07 ENTERPRISE CONTROLS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Enterprise Controls</span>
         </div>
-        <div class="right num">06 / 18</div>
+        <div class="right num">07 / 19</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 28px;">
@@ -1239,7 +1306,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Modes</span>
         </div>
-        <div class="right num">07 / 18</div>
+        <div class="right num">07 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1301,7 +1368,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Treatment 02 + 03 // Task drift &amp; Fake done</span>
         </div>
-        <div class="right num">08 / 18</div>
+        <div class="right num">08 / 19</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 18px; flex: 1; min-height: 0;">
@@ -1352,7 +1419,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Try missions</span>
         </div>
-        <div class="right num">09 / 18</div>
+        <div class="right num">09 / 19</div>
       </header>
 
       <div class="try-missions">
@@ -1385,7 +1452,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Treatment 01 // Codebase drift</span>
         </div>
-        <div class="right num">10 / 18</div>
+        <div class="right num">10 / 19</div>
       </header>
 
       <div class="agent-ready-layout">
@@ -1469,7 +1536,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Integrations</span>
         </div>
-        <div class="right num">11 / 18</div>
+        <div class="right num">11 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1514,7 +1581,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Observability &amp; Controls</span>
         </div>
-        <div class="right num">12 / 18</div>
+        <div class="right num">12 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1557,7 +1624,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Surfaces &amp; Automation</span>
         </div>
-        <div class="right num">13 / 18</div>
+        <div class="right num">13 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1628,7 +1695,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Pilot // Pre-flight checklist</span>
         </div>
-        <div class="right num">15 / 18</div>
+        <div class="right num">15 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1688,7 +1755,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Pilot // What to validate</span>
         </div>
-        <div class="right num">16 / 18</div>
+        <div class="right num">16 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1783,7 +1850,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Help &amp; Issues</span>
         </div>
-        <div class="right num">17 / 18</div>
+        <div class="right num">17 / 19</div>
       </header>
 
       <div class="content-wide">
@@ -1834,7 +1901,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Any Other Business</span>
         </div>
-        <div class="right num">18 / 18</div>
+        <div class="right num">18 / 19</div>
       </header>
 
       <div style="display:flex; flex-direction:column; justify-content:center; gap: 48px; max-width: 1400px; margin: 0 auto; width: 100%; flex: 1;">
@@ -1885,7 +1952,7 @@ img, svg { max-width: 100%; max-height: 100%; }
 
 <div class="deck-controls">
   <button id="btnPrev">&larr;</button>
-  <span class="counter"><span id="current">1</span> / <span id="total">18</span></span>
+  <span class="counter"><span id="current">1</span> / <span id="total">19</span></span>
   <button id="btnNext">&rarr;</button>
 </div>
 
@@ -1922,7 +1989,7 @@ img, svg { max-width: 100%; max-height: 100%; }
     const stage = document.getElementById('deckStage');
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-    const s = Math.min(vw / 1820, vh / 1080);
+    const s = Math.min(vw / 1920, vh / 1080);
     const x = (vw - 1920 * s) / 2;
     const y = (vh - 1080 * s) / 2;
     stage.style.transform = 'translate(' + x + 'px, ' + y + 'px) scale(' + s + ')';
