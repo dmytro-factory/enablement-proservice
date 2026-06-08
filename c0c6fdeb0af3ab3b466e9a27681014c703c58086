@@ -1,0 +1,36 @@
+deck.html
+  9ff5de9d8540426a 976,978-982,984-990,995,1000
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.2",
+  "base_commit_sha": "c0c6fdeb0af3ab3b466e9a27681014c703c58086",
+  "prompts": {
+    "1fbd033243202774": {
+      "agent_id": {
+        "tool": "droid",
+        "id": "8784c95f-87ba-4ed8-9064-ce42b9c04087",
+        "model": "kimi-k2.6"
+      },
+      "human_author": "DY",
+      "messages": [],
+      "total_additions": 101,
+      "total_deletions": 20,
+      "accepted_lines": 2,
+      "overriden_lines": 1
+    },
+    "9ff5de9d8540426a": {
+      "agent_id": {
+        "tool": "droid",
+        "id": "713c1c33-8ec4-4ed9-87cf-d3125df99e11",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "DY",
+      "messages": [],
+      "total_additions": 47,
+      "total_deletions": 148,
+      "accepted_lines": 21,
+      "overriden_lines": 0
+    }
+  }
+}
