@@ -1,0 +1,23 @@
+deck.html
+  9ff5de9d8540426a 903-907,1190,1195-1253,1260
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.2",
+  "base_commit_sha": "948928a45019bf1ce248c654fe2f544d365437f6",
+  "prompts": {
+    "9ff5de9d8540426a": {
+      "agent_id": {
+        "tool": "droid",
+        "id": "713c1c33-8ec4-4ed9-87cf-d3125df99e11",
+        "model": "kimi-k2.6"
+      },
+      "human_author": "DY",
+      "messages": [],
+      "total_additions": 70,
+      "total_deletions": 3,
+      "accepted_lines": 70,
+      "overriden_lines": 0
+    }
+  }
+}
