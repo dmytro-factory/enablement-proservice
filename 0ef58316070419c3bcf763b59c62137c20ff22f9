@@ -1,0 +1,23 @@
+deck.html
+  9ff5de9d8540426a 973-1003,1005-1025,1027-1035
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.2",
+  "base_commit_sha": "0ef58316070419c3bcf763b59c62137c20ff22f9",
+  "prompts": {
+    "9ff5de9d8540426a": {
+      "agent_id": {
+        "tool": "droid",
+        "id": "713c1c33-8ec4-4ed9-87cf-d3125df99e11",
+        "model": "claude-haiku-4-5-20251001"
+      },
+      "human_author": "DY",
+      "messages": [],
+      "total_additions": 61,
+      "total_deletions": 19,
+      "accepted_lines": 61,
+      "overriden_lines": 0
+    }
+  }
+}
