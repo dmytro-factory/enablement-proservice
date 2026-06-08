@@ -1045,82 +1045,98 @@ img, svg { max-width: 100%; max-height: 100%; }
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
-          <span>Observability &amp; Controls</span>
+          <span>Slash Commands</span>
         </div>
         <div class="right num">04 / 18</div>
       </header>
 
       <div class="content-wide">
-        <div class="kicker">Commands, settings, and workflows</div>
-        <h2 class="h2" style="max-width: 1200px;">Quick access. <em class="fg-orange" style="font-style:normal;">Pre-built automation.</em></h2>
+        <div class="kicker">Every / command, by role</div>
+        <h2 class="h2" style="max-width: 1200px;">Type <em class="fg-orange" style="font-style:normal;">/</em> to see everything available.</h2>
 
-        <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 12px;">
-          <div style="display:flex; flex-direction:column; gap: 16px;">
-            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Session Commands</div>
-              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
-                <div><a href="https://docs.factory.ai/cli/commands/sessions" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/sessions</a> — View all sessions</div>
-                <div><a href="https://docs.factory.ai/cli/commands/fork" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/fork</a> — Branch from current</div>
-                <div><a href="https://docs.factory.ai/cli/commands/review-history" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/review-history</a> — See what changed</div>
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 12px;">
+
+          <!-- SESSION -->
+          <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+            <div class="label" style="color: var(--orange); margin-bottom: 10px;">Session</div>
+            <div style="display:flex; flex-direction:column; gap: 6px; font-family: var(--font-mono); font-size: 12px; line-height: 1.5;">
+              <div><span style="color:var(--orange);">/new</span> <span style="color:var(--gray);">— start fresh session</span></div>
+              <div><span style="color:var(--orange);">/fork</span> <span style="color:var(--gray);">— branch from current</span></div>
+              <div><span style="color:var(--orange);">/rewind-conversation</span> <span style="color:var(--gray);">— roll back</span></div>
+              <div><span style="color:var(--orange);">/compress</span> <span style="color:var(--gray);">— shrink context</span></div>
+              <div><span style="color:var(--orange);">/rename</span> <span style="color:var(--gray);">— rename session</span></div>
+              <div><span style="color:var(--orange);">/pin</span> <span style="color:var(--gray);">— pin / unpin</span></div>
+              <div><span style="color:var(--orange);">/share</span> <span style="color:var(--gray);">— share with org</span></div>
+              <div><span style="color:var(--orange);">/copy</span> <span style="color:var(--gray);">— copy last reply</span></div>
+              <div><span style="color:var(--orange);">/btw</span> <span style="color:var(--gray);">— side question, no pollution</span></div>
+            </div>
+          </div>
+
+          <!-- TOOLS -->
+          <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+            <div class="label" style="color: var(--orange); margin-bottom: 10px;">Tools &amp; Automation</div>
+            <div style="display:flex; flex-direction:column; gap: 6px; font-family: var(--font-mono); font-size: 12px; line-height: 1.5;">
+              <div><span style="color:var(--orange);">/missions</span> <span style="color:var(--gray);">— launch a mission</span></div>
+              <div><span style="color:var(--orange);">/readiness-report</span> <span style="color:var(--gray);">— score your repo</span></div>
+              <div><span style="color:var(--orange);">/readiness-fix</span> <span style="color:var(--gray);">— apply fixes</span></div>
+              <div><span style="color:var(--orange);">/review</span> <span style="color:var(--gray);">— code review on changes</span></div>
+              <div><span style="color:var(--orange);">/git-ai</span> <span style="color:var(--gray);">— manage git AI hooks</span></div>
+              <div><span style="color:var(--orange);">/automations</span> <span style="color:var(--gray);">— scheduled automations</span></div>
+              <div><span style="color:var(--orange);">/create-skill</span> <span style="color:var(--gray);">— skill from conversation</span></div>
+              <div><span style="color:var(--orange);">/generate_blog</span> <span style="color:var(--gray);">— semantic diff as prose</span></div>
+              <div><span style="color:var(--orange);">/agent-effectiveness-report</span></div>
+              <div><span style="color:var(--orange);">/squad</span> <span style="color:var(--gray);">— squad mode overlay</span></div>
+              <div><span style="color:var(--orange);">/loop</span> <span style="color:var(--gray);">— configure agent loop</span></div>
+              <div><span style="color:var(--orange);">/install-slack-app</span></div>
+              <div><span style="color:var(--orange);">/setup-incident-response</span></div>
+              <div><span style="color:var(--orange);">/ide</span> <span style="color:var(--gray);">— IDE integration</span></div>
+            </div>
+          </div>
+
+          <!-- CONFIG + DIAGNOSTICS + META -->
+          <div style="display:flex; flex-direction:column; gap: 14px;">
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="color: var(--orange); margin-bottom: 10px;">Config</div>
+              <div style="display:flex; flex-direction:column; gap: 6px; font-family: var(--font-mono); font-size: 12px; line-height: 1.5;">
+                <div><span style="color:var(--orange);">/model</span> <span style="color:var(--gray);">— switch model</span></div>
+                <div><span style="color:var(--orange);">/mcp</span> <span style="color:var(--gray);">— MCP settings</span></div>
+                <div><span style="color:var(--orange);">/hooks</span> <span style="color:var(--gray);">— manage hooks</span></div>
+                <div><span style="color:var(--orange);">/skills</span> <span style="color:var(--gray);">— manage skills</span></div>
+                <div><span style="color:var(--orange);">/droids</span> <span style="color:var(--gray);">— custom droids</span></div>
+                <div><span style="color:var(--orange);">/plugins</span> <span style="color:var(--gray);">— plugins settings</span></div>
+                <div><span style="color:var(--orange);">/commands</span> <span style="color:var(--gray);">— custom commands</span></div>
+                <div><span style="color:var(--orange);">/cwd</span> <span style="color:var(--gray);">— change directory</span></div>
+                <div><span style="color:var(--orange);">/themes</span> <span style="color:var(--gray);">— color theme</span></div>
+                <div><span style="color:var(--orange);">/fast</span> <span style="color:var(--gray);">— fast mode toggle</span></div>
               </div>
             </div>
-
-            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Context &amp; Settings</div>
-              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
-                <div><a href="https://docs.factory.ai/cli/commands/context" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/context</a> — Manage session context</div>
-                <div><a href="https://docs.factory.ai/cli/commands/clear" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/clear</a> — Reset conversation</div>
-                <div><a href="https://docs.factory.ai/cli/commands/cost" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/cost</a> — Credit usage &amp; pricing</div>
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 10px;">Diagnostics</div>
+              <div style="display:flex; flex-direction:column; gap: 6px; font-family: var(--font-mono); font-size: 12px; line-height: 1.5;">
+                <div><span style="color:var(--orange);">/context</span> <span style="color:var(--gray);">— window usage</span></div>
+                <div><span style="color:var(--orange);">/cost</span> <span style="color:var(--gray);">— credit usage</span></div>
+                <div><span style="color:var(--orange);">/limits</span> <span style="color:var(--gray);">— rate limits</span></div>
+                <div><span style="color:var(--orange);">/stats</span> <span style="color:var(--gray);">— usage statistics</span></div>
+                <div><span style="color:var(--orange);">/status</span> <span style="color:var(--gray);">— session status</span></div>
               </div>
             </div>
-
-            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Auth &amp; Org</div>
-              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
-                <div><a href="https://docs.factory.ai/cli/commands/login" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/login</a> — Authenticate</div>
-                <div><a href="https://docs.factory.ai/cli/configuration/defaults" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/defaults</a> — Org-level config</div>
-                <div><a href="https://docs.factory.ai/cli/configuration/models" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">/models</a> — Available models &amp; routing</div>
+            <div style="padding: 16px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+              <div class="label" style="margin-bottom: 10px;">Navigation &amp; Meta</div>
+              <div style="display:flex; flex-direction:column; gap: 6px; font-family: var(--font-mono); font-size: 12px; line-height: 1.5;">
+                <div><span style="color:var(--orange);">/sessions</span> <span style="color:var(--gray);">— recent sessions</span></div>
+                <div><span style="color:var(--orange);">/settings</span> <span style="color:var(--gray);">— open settings</span></div>
+                <div><span style="color:var(--orange);">/help</span> <span style="color:var(--gray);">— keyboard shortcuts</span></div>
+                <div><span style="color:var(--orange);">/bug</span> <span style="color:var(--gray);">— file a bug report</span></div>
+                <div><span style="color:var(--orange);">/login</span> <span style="color:var(--gray);">/ <span style="color:var(--orange);">/logout</span></span></div>
               </div>
             </div>
           </div>
 
-          <div style="display:flex; flex-direction:column; gap: 16px;">
-            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Install Git Hooks</div>
-              <div style="padding: 12px 16px; background: var(--black); border: 1px solid var(--border); border-radius: var(--r-small); font-family: var(--font-mono); font-size: 12px; color: var(--gray); line-height: 1.6; margin-bottom: 8px;">
-                <div style="color: var(--white);">$ git ai --install</div>
-                <div style="color: var(--white); margin-top: 6px;">$ git ci --install</div>
-                <div style="color: var(--white); margin-top: 6px;">$ qa --install</div>
-              </div>
-              <div class="body" style="font-size: 12px; color: var(--gray);"><a href="https://docs.factory.ai/cli/git-hooks/overview" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">Git hooks docs →</a></div>
-            </div>
-
-            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-              <div class="label" style="margin-bottom: 12px; color: var(--orange);">Pre-built Workflows</div>
-              <div style="display:flex; flex-direction:column; gap: 8px; font-family: var(--font-mono); font-size: 13px; color: var(--white);">
-                <div><span style="color: var(--orange);">/missions</span> <span style="color: var(--gray);">security_scan</span></div>
-                <div><span style="color: var(--orange);">/missions</span> <span style="color: var(--gray);">agent_readiness</span></div>
-                <div><span style="color: var(--orange);">/missions</span> <span style="color: var(--gray);">review</span></div>
-              </div>
-              <div class="body" style="font-size: 12px; color: var(--gray); margin-top: 8px;"><a href="https://docs.factory.ai/cli/features/missions" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">Missions docs →</a> <a href="https://docs.factory.ai/cli/commands/readiness-report" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">readiness-report →</a></div>
-            </div>
-
-            <div style="padding: 18px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-              <div class="label" style="margin-bottom: 12px;">Observability</div>
-              <ul class="bullets" style="font-size: 14px;">
-                <li>Session history and replay</li>
-                <li>Credit usage tracking</li>
-                <li>Custom instructions</li>
-                <li>Org audit logs</li>
-              </ul>
-            </div>
-          </div>
         </div>
-
       </div>
 
       <footer class="foot">
-        <div>Observability // personal &amp; org</div>
+        <div>Slash commands // <a href="https://docs.factory.ai/cli/commands" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs.factory.ai/cli/commands &rarr;</a></div>
         <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">04</span></div>
       </footer>
     </section>
