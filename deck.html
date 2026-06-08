@@ -874,7 +874,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           </span>
           <span>Agenda</span>
         </div>
-        <div class="right num">02 / 19</div>
+        <div class="right num">02 / 18</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 28px;">
@@ -959,14 +959,95 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 03 CUSTOMIZATION HIERARCHY -->
+    <!-- 03 SURFACES + AUTOMATION -->
+    <section class="slide std">
+      <header class="chrome">
+        <div class="left">
+          <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
+          <span>Surfaces &amp; Automation</span>
+        </div>
+        <div class="right num">03 / 18</div>
+      </header>
+
+      <div class="content-wide">
+        <div class="kicker">Where you interact &middot; how you scale</div>
+        <h2 class="h2" style="max-width: 1200px;">Pick the surface for the job. <em class="fg-orange" style="font-style:normal;">Then automate it.</em></h2>
+
+        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 12px;">
+          <div class="card" style="border-color: var(--orange);">
+            <div class="label" style="color:var(--orange); margin-bottom: 12px;">IDE</div>
+            <div class="h3" style="font-size: 22px;">VS Code / Cursor</div>
+            <p class="body" style="margin-top: 10px; font-size: 15px;">Inline chat, diff review, side-panel context. The daily driver for most engineers.</p>
+          </div>
+          <div class="card" style="border-color: var(--orange);">
+            <div class="label" style="color:var(--orange); margin-bottom: 12px;">Desktop</div>
+            <div class="h3" style="font-size: 22px;">Factory App</div>
+            <p class="body" style="margin-top: 10px; font-size: 15px;">Native desktop application. Persistent sessions, mission monitoring, full plugin support.</p>
+          </div>
+          <div class="card" style="border-color: var(--orange);">
+            <div class="label" style="color:var(--orange); margin-bottom: 12px;">Web</div>
+            <div class="h3" style="font-size: 22px;">WebUI</div>
+            <p class="body" style="margin-top: 10px; font-size: 15px;">Browser-based. Access from any machine. Share sessions with teammates.</p>
+          </div>
+          <div class="card">
+            <div class="label" style="margin-bottom: 12px;">TUI</div>
+            <div class="h3" style="font-size: 22px;">Rich Terminal UI</div>
+            <p class="body" style="margin-top: 10px; font-size: 15px;">Full-screen interface for long-running tasks and mission monitoring. Persistent sessions.</p>
+          </div>
+          <div class="card">
+            <div class="label" style="margin-bottom: 12px;">CLI</div>
+            <div class="h3" style="font-size: 22px;">Command Line</div>
+            <p class="body" style="margin-top: 10px; font-size: 15px;">Scriptable, automatable, fast. Power users and CI integration. <code style="font-family:var(--font-mono); color:var(--orange);">droid exec</code> for headless.</p>
+          </div>
+          <div class="card">
+            <div class="label" style="margin-bottom: 12px;">SDK</div>
+            <div class="h3" style="font-size: 22px;">Programmatic</div>
+            <p class="body" style="margin-top: 10px; font-size: 15px;">Embed Factory into your own tools. Custom workflows, dashboards, triggers.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; padding: 20px 0; border-top: 1px solid var(--border);">
+          <div class="kicker" style="margin-bottom: 12px;">Automation &amp; Integrations</div>
+          <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+            <div class="card" style="border-color: var(--orange);">
+              <div class="label" style="color:var(--orange); margin-bottom: 10px;">CI/CD</div>
+              <div class="h3" style="font-size: 20px;">GitHub Actions</div>
+              <p class="body" style="margin-top: 8px; font-size: 14px;">Automated code review on every PR. Security scanning before merge. AGENTS.md loaded automatically. <a href="https://docs.factory.ai/guides/droid-exec/github-actions" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs &rarr;</a></p>
+            </div>
+            <div class="card">
+              <div class="label" style="margin-bottom: 10px;">Scheduling</div>
+              <div class="h3" style="font-size: 20px;">Droid Automation</div>
+              <p class="body" style="margin-top: 8px; font-size: 14px;">Hourly metrics alerts. Daily meeting followups. Weekly consumption tracking. All headless. <a href="https://docs.factory.ai/cli/droid-exec/overview" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs &rarr;</a></p>
+            </div>
+            <div class="card">
+              <div class="label" style="margin-bottom: 10px;">Notifications</div>
+              <div class="h3" style="font-size: 20px;">Slack</div>
+              <p class="body" style="margin-top: 8px; font-size: 14px;">Auto-backlinking on alert channels. Droid takes first pass at triage. Session summaries posted to thread.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 16px; padding: 18px 28px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
+          <div class="lead" style="font-size: 18px;">
+            <span class="fg-orange">Key insight:</span> Headless droids inherit the same controls as interactive sessions. Model policy, command allowlists, and Droid Shield all apply. The only difference is no human to approve &mdash; so governance must be airtight.
+          </div>
+        </div>
+      </div>
+
+      <footer class="foot">
+        <div>Surfaces // desktop, tui, cli, sdk &middot; Automation // ci, scheduled, slack</div>
+        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">03</span></div>
+      </footer>
+    </section>
+
+        <!-- 04 CUSTOMIZATION HIERARCHY -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Customization Hierarchy</span>
         </div>
-        <div class="right num">03 / 19</div>
+        <div class="right num">03 / 18</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 28px;">
@@ -1046,14 +1127,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 04 SKILLS & CUSTOM DROIDS -->
+    <!-- 05 SKILLS & CUSTOM DROIDS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Skills &amp; Custom Droids</span>
         </div>
-        <div class="right num">04 / 19</div>
+        <div class="right num">04 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1108,14 +1189,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 05 HOOKS -->
+    <!-- 06 HOOKS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Hooks</span>
         </div>
-        <div class="right num">05 / 19</div>
+        <div class="right num">05 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1187,14 +1268,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 06 PLUGINS -->
+    <!-- 07 PLUGINS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Plugins &amp; Distribution</span>
         </div>
-        <div class="right num">06 / 19</div>
+        <div class="right num">06 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1250,14 +1331,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 07 ENTERPRISE CONTROLS -->
+    <!-- 08 ENTERPRISE CONTROLS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Enterprise Controls</span>
         </div>
-        <div class="right num">07 / 19</div>
+        <div class="right num">07 / 18</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 28px;">
@@ -1299,14 +1380,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 07 MODES -->
+    <!-- 09 MODES -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Modes</span>
         </div>
-        <div class="right num">07 / 19</div>
+        <div class="right num">14 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1361,14 +1442,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 08 MISSIONS ARCHITECTURE -->
+    <!-- 10 MISSIONS ARCHITECTURE -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Treatment 02 + 03 // Task drift &amp; Fake done</span>
         </div>
-        <div class="right num">08 / 19</div>
+        <div class="right num">08 / 18</div>
       </header>
 
       <div style="display:flex; flex-direction:column; gap: 18px; flex: 1; min-height: 0;">
@@ -1412,14 +1493,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 09 TRY MISSIONS -->
+    <!-- 11 TRY MISSIONS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Try missions</span>
         </div>
-        <div class="right num">09 / 19</div>
+        <div class="right num">14 / 18</div>
       </header>
 
       <div class="try-missions">
@@ -1445,14 +1526,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 10 AGENT READINESS -->
+    <!-- 12 AGENT READINESS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Treatment 01 // Codebase drift</span>
         </div>
-        <div class="right num">10 / 19</div>
+        <div class="right num">14 / 18</div>
       </header>
 
       <div class="agent-ready-layout">
@@ -1529,14 +1610,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 11 INTEGRATIONS -->
+    <!-- 13 INTEGRATIONS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Integrations</span>
         </div>
-        <div class="right num">11 / 19</div>
+        <div class="right num">14 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1570,18 +1651,18 @@ img, svg { max-width: 100%; max-height: 100%; }
 
       <footer class="foot">
         <div>Integrations // git, jira, mcps</div>
-        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">11</span></div>
+        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">14</span></div>
       </footer>
     </section>
 
-    <!-- 12 OBSERVABILITY & CONTROLS -->
+    <!-- 14 OBSERVABILITY & CONTROLS -->
     <section class="slide std">
       <header class="chrome">
         <div class="left">
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Observability &amp; Controls</span>
         </div>
-        <div class="right num">12 / 19</div>
+        <div class="right num">14 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1613,80 +1694,11 @@ img, svg { max-width: 100%; max-height: 100%; }
 
       <footer class="foot">
         <div>Observability // personal &amp; org</div>
-        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">12</span></div>
+        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">14</span></div>
       </footer>
     </section>
 
-    <!-- 13 SURFACES + AUTOMATION -->
-    <section class="slide std">
-      <header class="chrome">
-        <div class="left">
-          <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
-          <span>Surfaces &amp; Automation</span>
-        </div>
-        <div class="right num">13 / 19</div>
-      </header>
 
-      <div class="content-wide">
-        <div class="kicker">Where you interact &middot; how you scale</div>
-        <h2 class="h2" style="max-width: 1200px;">Pick the surface for the job. <em class="fg-orange" style="font-style:normal;">Then automate it.</em></h2>
-
-        <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 12px;">
-          <div class="card" style="border-color: var(--orange);">
-            <div class="label" style="color:var(--orange); margin-bottom: 12px;">Desktop</div>
-            <div class="h3" style="font-size: 22px;">VS Code Extension</div>
-            <p class="body" style="margin-top: 10px; font-size: 15px;">Inline chat, diff review, side-panel context. The daily driver for most engineers.</p>
-          </div>
-          <div class="card">
-            <div class="label" style="margin-bottom: 12px;">TUI</div>
-            <div class="h3" style="font-size: 22px;">Rich Terminal UI</div>
-            <p class="body" style="margin-top: 10px; font-size: 15px;">Full-screen interface for long-running tasks and mission monitoring. Persistent sessions.</p>
-          </div>
-          <div class="card">
-            <div class="label" style="margin-bottom: 12px;">CLI</div>
-            <div class="h3" style="font-size: 22px;">Command Line</div>
-            <p class="body" style="margin-top: 10px; font-size: 15px;">Scriptable, automatable, fast. Power users and CI integration. <code style="font-family:var(--font-mono); color:var(--orange);">droid exec</code> for headless.</p>
-          </div>
-          <div class="card">
-            <div class="label" style="margin-bottom: 12px;">SDK</div>
-            <div class="h3" style="font-size: 22px;">Programmatic</div>
-            <p class="body" style="margin-top: 10px; font-size: 15px;">Embed Factory into your own tools. Custom workflows, dashboards, triggers.</p>
-          </div>
-        </div>
-
-        <div style="margin-top: 20px; padding: 20px 0; border-top: 1px solid var(--border);">
-          <div class="kicker" style="margin-bottom: 12px;">Automation &amp; Integrations</div>
-          <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
-            <div class="card" style="border-color: var(--orange);">
-              <div class="label" style="color:var(--orange); margin-bottom: 10px;">CI/CD</div>
-              <div class="h3" style="font-size: 20px;">GitHub Actions</div>
-              <p class="body" style="margin-top: 8px; font-size: 14px;">Automated code review on every PR. Security scanning before merge. AGENTS.md loaded automatically. <a href="https://docs.factory.ai/guides/droid-exec/github-actions" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs &rarr;</a></p>
-            </div>
-            <div class="card">
-              <div class="label" style="margin-bottom: 10px;">Scheduling</div>
-              <div class="h3" style="font-size: 20px;">Droid Automation</div>
-              <p class="body" style="margin-top: 8px; font-size: 14px;">Hourly metrics alerts. Daily meeting followups. Weekly consumption tracking. All headless. <a href="https://docs.factory.ai/cli/droid-exec/overview" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs &rarr;</a></p>
-            </div>
-            <div class="card">
-              <div class="label" style="margin-bottom: 10px;">Notifications</div>
-              <div class="h3" style="font-size: 20px;">Slack</div>
-              <p class="body" style="margin-top: 8px; font-size: 14px;">Auto-backlinking on alert channels. Droid takes first pass at triage. Session summaries posted to thread.</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top: 16px; padding: 18px 28px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-          <div class="lead" style="font-size: 18px;">
-            <span class="fg-orange">Key insight:</span> Headless droids inherit the same controls as interactive sessions. Model policy, command allowlists, and Droid Shield all apply. The only difference is no human to approve &mdash; so governance must be airtight.
-          </div>
-        </div>
-      </div>
-
-      <footer class="foot">
-        <div>Surfaces // desktop, tui, cli, sdk &middot; Automation // ci, scheduled, slack</div>
-        <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">13</span></div>
-      </footer>
-    </section>
 
     <!-- 15 PILOT CHECKLIST -->
     <section class="slide std">
@@ -1695,7 +1707,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Pilot // Pre-flight checklist</span>
         </div>
-        <div class="right num">15 / 19</div>
+        <div class="right num">15 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1755,7 +1767,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Pilot // What to validate</span>
         </div>
-        <div class="right num">16 / 19</div>
+        <div class="right num">16 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1850,7 +1862,7 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Help &amp; Issues</span>
         </div>
-        <div class="right num">17 / 19</div>
+        <div class="right num">17 / 18</div>
       </header>
 
       <div class="content-wide">
@@ -1901,15 +1913,12 @@ img, svg { max-width: 100%; max-height: 100%; }
           <span class="mark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#fff" stroke-width="1.4"/><path d="M2 7l10 5 10-5M12 12v10" stroke="#fff" stroke-width="1.4"/></svg></span>
           <span>Any Other Business</span>
         </div>
-        <div class="right num">18 / 19</div>
+        <div class="right num">18 / 18</div>
       </header>
 
       <div style="display:flex; flex-direction:column; justify-content:center; gap: 48px; max-width: 1400px; margin: 0 auto; width: 100%; flex: 1;">
         <div class="kicker">Open floor</div>
         <h1 class="h1" style="font-size: 96px; max-width: 1200px;">What did we miss?<br><em class="fg-orange" style="font-style:normal;">What should we cover next time?</em></h1>
-        <div class="lead" style="font-size: 28px; max-width: 900px;">
-          This deck is a skeleton. Fill the bones with your team's specific questions, blockers, and success stories.
-        </div>
       </div>
 
       <footer class="foot">
@@ -1918,41 +1927,14 @@ img, svg { max-width: 100%; max-height: 100%; }
       </footer>
     </section>
 
-    <!-- 19 CLOSE -->
-    <section class="slide close">
-      <div class="close-inner">
-        <header class="cover-chrome" style="display:flex; align-items:center; justify-content:space-between; font-family: var(--font-mono); font-size:14px; color:var(--white); opacity:0.85; text-transform:uppercase; letter-spacing:0.1em;">
-          <div><img src="https://factory-brand-guide.vercel.app/logos/factory-lockup-white.svg" alt="Factory" style="height:24px; vertical-align:middle;"></div>
-          <div>Close</div>
-        </header>
 
-        <div class="close-body">
-          <div class="kicker" style="margin-bottom: 28px;">Dmytro Yaroshenko &mdash; June 8th, 2026</div>
-          <h1>The harness is not optional. <em>It is the work.</em></h1>
-          <div class="sub" style="margin-top: 36px;">Models improve. Surfaces evolve. The leverage &mdash; and the moat &mdash; stays in the harness you build around them.</div>
-          <div class="sub" style="margin-top: 96px; opacity: 1;">Questions? Reach out anytime.</div>
-          <div class="sub" style="margin-top: 14px; font-family: var(--font-mono); font-size: 20px; opacity: 0.85;">
-            <a href="mailto:dmytro.yaroshenko@factory.ai" style="color: var(--orange); text-decoration: none;">dmytro.yaroshenko@factory.ai</a>
-            &nbsp;&middot;&nbsp;
-            <a href="https://www.linkedin.com/in/yarodmi/" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">linkedin.com/in/yarodmi</a>
-            &nbsp;&middot;&nbsp;
-            <a href="https://factory.ai" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">factory.ai</a>
-          </div>
-        </div>
-
-        <footer class="cover-foot" style="border-top: 1px solid rgba(255,255,255,0.18); padding-top: 18px; opacity: 0.7;">
-          <div>Factory.ai</div>
-          <div>ProService Team</div>
-        </footer>
-      </div>
-    </section>
 
   </div>
 </div>
 
 <div class="deck-controls">
   <button id="btnPrev">&larr;</button>
-  <span class="counter"><span id="current">1</span> / <span id="total">19</span></span>
+  <span class="counter"><span id="current">1</span> / <span id="total">18</span></span>
   <button id="btnNext">&rarr;</button>
 </div>
 
@@ -1989,7 +1971,7 @@ img, svg { max-width: 100%; max-height: 100%; }
     const stage = document.getElementById('deckStage');
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-    const s = Math.min(vw / 1920, vh / 1080);
+    const s = Math.min(vw / 1820, vh / 1080);
     const x = (vw - 1920 * s) / 2;
     const y = (vh - 1080 * s) / 2;
     stage.style.transform = 'translate(' + x + 'px, ' + y + 'px) scale(' + s + ')';
