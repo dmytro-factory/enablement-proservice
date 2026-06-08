@@ -955,35 +955,29 @@ img, svg { max-width: 100%; max-height: 100%; }
         </div>
 
         <div style="margin-top: 20px; padding: 20px 0; border-top: 1px solid var(--border);">
-          <div class="kicker" style="margin-bottom: 12px;">Automation &amp; Integrations</div>
+          <div class="kicker" style="margin-bottom: 12px;">Where does the droid run?</div>
           <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
             <div class="card" style="border-color: var(--orange);">
-              <div class="label" style="color:var(--orange); margin-bottom: 10px;">CI/CD</div>
-              <div class="h3" style="font-size: 20px;">GitHub Actions</div>
-              <p class="body" style="margin-top: 8px; font-size: 14px;">Automated code review on every PR. Security scanning before merge. AGENTS.md loaded automatically. <a href="https://docs.factory.ai/guides/droid-exec/github-actions" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs &rarr;</a></p>
+              <div class="label" style="color:var(--orange); margin-bottom: 10px;">Default</div>
+              <div class="h3" style="font-size: 20px;">Local</div>
+              <p class="body" style="margin-top: 8px; font-size: 14px;">Runs on your machine. Full access to local filesystem, tools, and credentials. Zero data leaves your environment except the model API call.</p>
             </div>
             <div class="card">
-              <div class="label" style="margin-bottom: 10px;">Scheduling</div>
-              <div class="h3" style="font-size: 20px;">Droid Automation</div>
-              <p class="body" style="margin-top: 8px; font-size: 14px;">Hourly metrics alerts. Daily meeting followups. Weekly consumption tracking. All headless. <a href="https://docs.factory.ai/cli/droid-exec/overview" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs &rarr;</a></p>
+              <div class="label" style="margin-bottom: 10px;">Cloud</div>
+              <div class="h3" style="font-size: 20px;">Droid Computer</div>
+              <p class="body" style="margin-top: 8px; font-size: 14px;">Factory-managed cloud sandbox. Spin up a fully isolated compute environment for a session. No local setup required &mdash; useful for CI, onboarding, and ephemeral tasks. <a href="https://docs.factory.ai/cli/features/droid-computer" target="_blank" rel="noopener" style="color: var(--orange); text-decoration: none;">docs &rarr;</a></p>
             </div>
             <div class="card">
-              <div class="label" style="margin-bottom: 10px;">Notifications</div>
-              <div class="h3" style="font-size: 20px;">Slack</div>
-              <p class="body" style="margin-top: 8px; font-size: 14px;">Auto-backlinking on alert channels. Droid takes first pass at triage. Session summaries posted to thread.</p>
+              <div class="label" style="margin-bottom: 10px;">Enterprise</div>
+              <div class="h3" style="font-size: 20px;">BYOC</div>
+              <p class="body" style="margin-top: 8px; font-size: 14px;">Bring Your Own Compute. Connect Factory to your own cloud or on-prem infrastructure. Data stays inside your perimeter. Full control over networking, secrets, and execution environment.</p>
             </div>
-          </div>
-        </div>
-
-        <div style="margin-top: 16px; padding: 18px 28px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-small);">
-          <div class="lead" style="font-size: 18px;">
-            <span class="fg-orange">Key insight:</span> Headless droids inherit the same controls as interactive sessions. Model policy, command allowlists, and Droid Shield all apply. The only difference is no human to approve &mdash; so governance must be airtight.
           </div>
         </div>
       </div>
 
       <footer class="foot">
-        <div>Surfaces // desktop, tui, cli, sdk &middot; Automation // ci, scheduled, slack</div>
+        <div>Surfaces // ide, desktop, web, tui, cli, sdk &middot; Compute // local, cloud, byoc</div>
         <div style="display:flex; align-items:center; gap:20px;"><span class="doubt">In doubt? Ask droid!</span><span class="num">03</span></div>
       </footer>
     </section>
